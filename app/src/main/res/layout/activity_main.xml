@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="365dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/applogo"
+        />
+
+    <TextView
+        android:id="@+id/app_slogan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="55dp"
+        android:text="All the best for a whole lot less! See what's selling best!"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/intro"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/intro"
+        />
+
+    <ImageView
+        android:id="@+id/open"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="380dp"
+        android:src="@drawable/open"
+        />
+
+    <ImageView
+        android:id="@+id/sale"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/sale"
+        />
+
+    <Button
+        android:id="@+id/main_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Already have an Account? Login"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/main_join_now_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_login_btn"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Register Now"
+        android:textColor="@android:color/black"
+        />
+
+
+</RelativeLayout>
