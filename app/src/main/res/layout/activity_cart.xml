@@ -32,11 +32,10 @@
         android:id="@+id/total_price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total Price = "
+        android:text="Subtotal: "
         android:background="@android:color/holo_green_dark"
         android:textColor="@android:color/white"
         android:textSize="24dp"
-        android:textAlignment="center"
         android:padding="12dp"
         android:layout_marginTop="10dp"
         android:layout_above="@+id/next_btn"
@@ -47,10 +46,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
-        android:layout_alignParentBottom="true"
-        android:text="Next"
+        android:text="Proceed to Checkout"
+        android:padding="14dp"
+        android:layout_above="@+id/cancel_btn"
         android:textColor="@android:color/white"
         android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_new_product"
+        android:background="@color/colorButton"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:text="CANCEL"
+        android:textColor="@android:color/black"
         />
 
 </RelativeLayout>

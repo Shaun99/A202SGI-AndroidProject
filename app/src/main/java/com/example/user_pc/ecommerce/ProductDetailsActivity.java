@@ -78,7 +78,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
         SimpleDateFormat currentTime = new SimpleDateFormat("h:mm:ss a");
         saveCurrentTime = currentTime.format(calendar.getTime());
 
-        //Create a database reference
+        //Create a database reference to store the user orders in cart list
         final DatabaseReference cartListRef = FirebaseDatabase.getInstance().getReference().child("Cart List");
         //Store each value inside each of the variable
         final HashMap<String, Object> cartMap = new HashMap<>();
@@ -132,7 +132,7 @@ public class ProductDetailsActivity extends AppCompatActivity {
                     Products products = dataSnapshot.getValue(Products.class);
                     //Display the product details to user
                     productName.setText(products.getPname());
-                    productPrice.setText("Price: RM" + products.getPrice());
+                    productPrice.setText(products.getPrice());
                     productDescription.setText(products.getDescription());
                     Picasso.get().load(products.getImage()).into(productImage);
                 }
