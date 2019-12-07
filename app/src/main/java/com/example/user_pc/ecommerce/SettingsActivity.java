@@ -1,9 +1,6 @@
 package com.example.user_pc.ecommerce;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,41 +10,23 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.user_pc.ecommerce.Prevalent.Prevalent;
-import com.google.android.gms.tasks.Continuation;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.StorageTask;
-import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class SettingsActivity extends AppCompatActivity {
     //Declare and initialise variables
-    private CircleImageView profileImageView;
     private EditText fullNameEditText, userPasswordEditText, addressEditText;
-    private TextView profileChangeTextBtn,  closeTextBtn, saveTextButton;
-
-    private StorageReference storageProfilePrictureRef;
-    private String checker = "";
-
+    private TextView closeTextBtn, saveTextButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        //Create a storage reference
-        storageProfilePrictureRef = FirebaseStorage.getInstance().getReference().child("Profile pictures");
+
         //Locate the view having id from the layout resource file
-        profileImageView = (CircleImageView) findViewById(R.id.settings_profile_image);
         fullNameEditText = (EditText) findViewById(R.id.settings_full_name);
         userPasswordEditText = (EditText) findViewById(R.id.settings_password);
         addressEditText = (EditText) findViewById(R.id.settings_address);
@@ -97,11 +76,11 @@ public class SettingsActivity extends AppCompatActivity {
         }
         else
         {
-            updateOnlyUserInfo();
+            updateUserInfo();
         }
     }
 
-    private void updateOnlyUserInfo()
+    private void updateUserInfo()
     {   //Create database reference
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("Users");
         //Store each value inside each of the variable

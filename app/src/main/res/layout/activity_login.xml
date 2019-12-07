@@ -60,14 +60,12 @@
         android:layout_below="@+id/login_password_input"
         android:layout_marginTop="5dp"
         >
-        <com.rey.material.widget.CheckBox
+        <CheckBox
             android:id="@+id/remember_me_chkb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Material.Drawable.CheckBox"
             android:text="Remember me"
             android:textColor="@color/colorPrimaryDark"
-            app:cbd_strokeColor="@color/colorPrimaryDark"
             android:gravity="center_vertical"
             android:textSize="18sp"
             android:layout_marginLeft="17dp"

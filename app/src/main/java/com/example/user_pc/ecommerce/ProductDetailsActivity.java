@@ -25,7 +25,6 @@ import com.squareup.picasso.Picasso;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
-import java.util.TimeZone;
 
 public class ProductDetailsActivity extends AppCompatActivity {
 
