@@ -97,7 +97,7 @@
         android:layout_above="@+id/back_btn"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="Confirm"
+        android:text="Confirm Order"
         android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/white"
         android:textSize="20dp"

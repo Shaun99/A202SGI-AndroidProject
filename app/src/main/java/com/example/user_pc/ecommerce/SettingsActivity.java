@@ -89,7 +89,7 @@ public class SettingsActivity extends AppCompatActivity {
         }
         else if (TextUtils.isEmpty(userPasswordEditText.getText().toString()))
         {
-            Toast.makeText(this, "Please fill in the phone.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please fill in the password.", Toast.LENGTH_SHORT).show();
         }
         else if (TextUtils.isEmpty(addressEditText.getText().toString()))
         {
