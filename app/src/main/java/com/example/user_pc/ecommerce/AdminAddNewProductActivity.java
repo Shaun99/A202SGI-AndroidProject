@@ -34,7 +34,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
     private Button AddNewProductButton , BackButton;
     private ImageView InputProductImage;
     private EditText InputProductName, InputProductDescription, InputProductPrice;
-    private static final int GalleryPick = 1;
+    private static final int GalleryPick = 1; //The request code
     private Uri ImageUri;
     private String productRandomKey, downloadImageUrl;
     private StorageReference ProductImagesRef;
