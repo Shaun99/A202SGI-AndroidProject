@@ -183,6 +183,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
                         }
                         //The image link will be stored inside this variable
                         downloadImageUrl = filePath.getDownloadUrl().toString();
+                        // Continue with the task to get the download URL
                         return filePath.getDownloadUrl();
                     }
                 }).addOnCompleteListener(new OnCompleteListener<Uri>() {
