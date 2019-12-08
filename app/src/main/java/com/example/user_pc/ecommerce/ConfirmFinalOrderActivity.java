@@ -140,7 +140,8 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task)
                                                     {
-                                                        Toast.makeText(ConfirmFinalOrderActivity.this, "Thank you! Your order has been placed successfully.", Toast.LENGTH_SHORT).show();
+                                                        Toast.makeText(ConfirmFinalOrderActivity.this,
+                                                                "Thank you! Your order has been placed successfully.", Toast.LENGTH_SHORT).show();
                                                         //Redirect the user back to Home Page after the users have successfully placed the order
                                                         Intent intent = new Intent(ConfirmFinalOrderActivity.this, HomeActivity.class);
                                                         //To prevent users from come back to this activity
